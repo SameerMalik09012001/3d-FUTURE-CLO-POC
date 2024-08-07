@@ -1,0 +1,252 @@
+* {
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(18, 18, 37);
+}
+
+
+.color {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    height: 20%;
+    display: flex;
+    padding: 0px 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #fff;
+    gap: 20px;
+}
+
+.container {
+    background-color: rgb(255, 255, 255);
+    width: max-content;
+    height: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.circle1 {
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.circle2 {
+    width: 40px;
+    height: 40px;
+    background-color: orange;
+    border-radius: 50%;
+}
+
+.circle3 {
+    width: 40px;
+    height: 40px;
+    background-color: green;
+    border-radius: 50%;
+}
+
+.circle4 {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+.circle5 {
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+.circle6 {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+.canvas {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    height: 80%;
+    
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    color: black;
+  }
+  
+  .dropdown select {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+
+  .en, .en1 {
+    color: black;
+  }
+  
+  .dropdown select:hover {
+    border-color: #999;
+  }
+  
+  .dropdown select:focus {
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(100, 100, 100, 0.5);
+  }
+  
+  .dropdown select option {
+    padding: 10px;
+  }
+  
+
+
+.file-picker {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .file-picker input[type="file"] {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .file-picker:hover {
+    background-color: #e0e0e0;
+    color: #000;
+  }
+  
+  .file-picker span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+    /* Container for the range input */
+    .range-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+  
+    /* Range input styling */
+    .range-container input[type="range"] {
+      -webkit-appearance: none;
+      /* Remove default styling */
+      width: 100%;
+      max-width: 300px;
+      /* Maximum width of the slider */
+      height: 8px;
+      /* Height of the track */
+      background: #ddd;
+      /* Track background color */
+      border-radius: 5px;
+      /* Rounded corners for the track */
+      outline: none;
+      /* Remove default outline */
+      cursor: pointer;
+      /* Pointer cursor on hover */
+    }
+  
+    /* Styling for the range input thumb */
+    .range-container input[type="range"]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      /* Remove default thumb styling */
+      width: 20px;
+      /* Width of the thumb */
+      height: 20px;
+      /* Height of the thumb */
+      background: #3498db;
+      /* Thumb background color */
+      border-radius: 50%;
+      /* Circular thumb */
+      cursor: pointer;
+      /* Pointer cursor on hover */
+      border: 2px solid #2980b9;
+      /* Border color for the thumb */
+    }
+  
+    /* Styling for the range input thumb for Firefox */
+    .range-container input[type="range"]::-moz-range-thumb {
+      width: 20px;
+      /* Width of the thumb */
+      height: 20px;
+      /* Height of the thumb */
+      background: #3498db;
+      /* Thumb background color */
+      border-radius: 50%;
+      /* Circular thumb */
+      cursor: pointer;
+      /* Pointer cursor on hover */
+      border: 2px solid #2980b9;
+      /* Border color for the thumb */
+    }
+  
+    /* Styling for the range input thumb for Internet Explorer */
+    .range-container input[type="range"]::-ms-thumb {
+      width: 20px;
+      /* Width of the thumb */
+      height: 20px;
+      /* Height of the thumb */
+      background: #3498db;
+      /* Thumb background color */
+      border-radius: 50%;
+      /* Circular thumb */
+      cursor: pointer;
+      /* Pointer cursor on hover */
+      border: 2px solid #2980b9;
+      /* Border color for the thumb */
+    }
+  
+    /* Optional: Add styles for the range input value */
+    .range-value {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #333;
+    }
